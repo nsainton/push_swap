@@ -6,7 +6,7 @@
 #    By: nsainton <nsainton@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/01/26 22:58:27 by nsainton          #+#    #+#              #
-#    Updated: 2023/03/14 16:02:07 by nsainton         ###   ########.fr        #
+#    Updated: 2023/05/05 17:13:48 by nsainton         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -16,12 +16,9 @@ PROG := $(NAME).c
 
 SRCS_DIR := sources
 
-SRCS_NAMES = algorithms/turk.c  operations/basic_operations.c operations/do_ops.c \
-			operations/operations.c operations/operations_both.c  stack/add.c \
-			stack/algo_funcs.c stack/comparison.c stack/delete.c stack/getters.c \
-			stack/helpers.c stack/init.c stack/print.c stack/searching.c stack/setters.c  \
-			checking/infos.c checking/sorted.c  parsing/atoi_errors.c parsing/parsing.c  \
-			debug/debug.c
+SRCS_SUBDIRS := $(shell find $(SRCS_DIR) -type d)
+
+SRCS_NAMES = $(subst $(SRCS_DIR)/,,$(foreach dir, $(SRCS_SUBDIRS), $(wildcard $(dir)/*.c)))
 
 SRCS := $(addprefix $(SRCS_DIR)/, $(SRCS_NAMES))
 
@@ -35,7 +32,11 @@ INCS_DIR := includes
 
 INCS_NAMES := $(wildcard $(INCS_DIR)/*)
 
-LFT_DIR := ../Libft
+LIBS_DIR ?= $(addprefix $(shell pwd)/, libs)
+
+LFT_DIR := $(addprefix $(LIBS_DIR)/, libft)
+
+LFT_URL := git@github.com:nsainton/libft.git
 
 LFT_NAME := libft.a
 
@@ -52,7 +53,7 @@ CFLAGS := -Wall -Wextra -Werror
 export C_INCLUDE_PATH=$(INCS_DIR):$(LFT_DIR)/$(INCS_DIR)
 export LIBRARY_PATH=$(LFT_DIR)
 
-all:
+all: | $(LFT_DIR)
 	$(MAKE) $(NAME)
 
 names:
@@ -73,6 +74,9 @@ $(OBJS_DIR)/%.o: $(SRCS_DIR)/%.c $(INCS_NAMES)
 $(LFT):
 	$(MAKE) -C $(LFT_DIR)
 
+$(LFT_DIR):
+	git clone $(LFT_URL) $@
+
 clean:
 	$(MAKE) clean -C $(LFT_DIR)
 	$(RM) -r $(OBJS_DIR)
@@ -81,9 +85,13 @@ oclean:
 	$(MAKE) oclean -C $(LFT_DIR)
 	$(RM) $(NAME)
 
+lclean:
+	$(RM) -f $(LIBS_DIR)
+
 fclean:
 	$(MAKE) clean
 	$(MAKE) oclean
+	$(MAKE) lclean
 
 re:
 	$(MAKE) fclean
@@ -109,6 +117,7 @@ leaks:
 	$(MAKE) debug && valgrind ./$(NAME) "2 1 3"
 
 getsrcs:
-	echo $(SOURCES_NAMES)
+	echo $(SRCS_NAMES)
+
 .PHONY: all clean fclean oclean re debug
 .SILENT: test

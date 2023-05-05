@@ -25,3 +25,6 @@ main.c
 
 # Push Swap executable #
 push_swap
+
+# Libs dir #
+libs

@@ -6,7 +6,7 @@
 /*   By: nsainton <nsainton@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/08 13:33:10 by nsainton          #+#    #+#             */
-/*   Updated: 2023/03/14 14:06:58 by nsainton         ###   ########.fr       */
+/*   Updated: 2023/05/05 17:14:34 by nsainton         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -77,7 +77,6 @@ size_t	best_push(t_stack *a, t_stack *b, t_csizet min_size)
 	t_moves	moves;
 	int		lim;
 	size_t	operations;
-	int		nb;
 
 	if (! disorder(a))
 		return (0);
@@ -85,10 +84,9 @@ size_t	best_push(t_stack *a, t_stack *b, t_csizet min_size)
 	operations = init_reserve(a, b, lim, min_size);
 	if (! operations)
 		return (sort_small(a));
-	nb = 0;
 	while (getsize(a) > min_size)
 	{
-		nb = least_moves((t_cstack *[]){a, b}, &moves, lim);
+		least_moves((t_cstack *[]){a, b}, &moves, lim);
 		operations += do_ops(a, b, &moves);
 		operations += push(a, b);
 	}
