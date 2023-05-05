@@ -1,0 +1,82 @@
+[0;32mStack [0m[0;32mA[0m[0;32m has been successfully [0m[0;32mcreated
+[0mIn function : addbottom
+Content : 1
+In function : addbottom
+Content : 2
+In function : addbottom
+Content : 3
+Initial size : 3
+Before swap
+Printing stack : A
+Stack A size is : 3
+1
+2
+3
+[0;32mStack [0m[0;32mA[0m[0;32m has been successfully [0m[0;32mprinted
+[0mIn function : addtop
+Content : 2
+In function : addtop
+Content : 1
+After swap
+Printing stack : A
+Stack A size is : 3
+1
+2
+3
+[0;32mStack [0m[0;32mA[0m[0;32m has been successfully [0m[0;32mprinted
+[0mAnother time 
+Printing stack : A
+Stack A size is : 3
+1
+2
+3
+[0;32mStack [0m[0;32mA[0m[0;32m has been successfully [0m[0;32mprinted
+[0mEnough
+Printing stack : A
+Stack A size is : 2
+2
+3
+[0;32mStack [0m[0;32mA[0m[0;32m has been successfully [0m[0;32mprinted
+[0mPrinting stack : B
+Stack B size is : 0
+1
+[0;32mStack [0m[0;32mB[0m[0;32m has been successfully [0m[0;32mprinted
+[0mPrinting stack : A
+Stack A size is : 1
+3
+[0;32mStack [0m[0;32mA[0m[0;32m has been successfully [0m[0;32mprinted
+[0mPrinting stack : B
+Stack B size is : 0
+2
+[0;32mStack [0m[0;32mB[0m[0;32m has been successfully [0m[0;32mprinted
+[0mA size is : 1
+Rotate on stack : A
+In function : addbottom
+Content : 3
+Printing stack : A
+Stack A size is : 1
+3
+[0;32mStack [0m[0;32mA[0m[0;32m has been successfully [0m[0;32mprinted
+[0mPrinting stack : B
+Stack B size is : 0
+2
+[0;32mStack [0m[0;32mB[0m[0;32m has been successfully [0m[0;32mprinted
+[0mReverse rotate on stack : A
+In function : addbottom
+Content : 3
+Printing stack : A
+Stack A size is : 1
+3
+[0;32mStack [0m[0;32mA[0m[0;32m has been successfully [0m[0;32mprinted
+[0mRotate on stack : B
+In function : addbottom
+Content : 2
+Printing stack : A
+Stack A size is : 1
+3
+[0;32mStack [0m[0;32mA[0m[0;32m has been successfully [0m[0;32mprinted
+[0mPrinting stack : B
+Stack B size is : 0
+[0;32mStack [0m[0;32mB[0m[0;32m has been successfully [0m[0;32mprinted
+[0mReverse rotate on stack : B
+In function : addbottom

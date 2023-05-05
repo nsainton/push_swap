@@ -1,0 +1,183 @@
+[0;32mStack [0m[0;32mA[0m[0;32m has been successfully [0m[0;32mcreated
+[0mIn function : addbottom
+Content : 1
+In function : addbottom
+Content : 2
+In function : addbottom
+Content : 3
+In function : addbottom
+Content : 4
+In function : addbottom
+Content : 5
+Initial size : 5
+Before swap
+Printing stack : A
+Stack A size is : 5
+1
+2
+3
+4
+5
+[0;32mStack [0m[0;32mA[0m[0;32m has been successfully [0m[0;32mprinted
+[0mIn function : addtop
+Content : 1
+In function : addtop
+Content : 2
+After swap
+Printing stack : A
+Stack A size is : 5
+2
+1
+3
+4
+5
+[0;32mStack [0m[0;32mA[0m[0;32m has been successfully [0m[0;32mprinted
+[0mAnother time 
+Printing stack : A
+Stack A size is : 5
+2
+1
+3
+4
+5
+[0;32mStack [0m[0;32mA[0m[0;32m has been successfully [0m[0;32mprinted
+[0mEnough
+In function : addtop
+Content : 2
+Printing stack : A
+Stack A size is : 4
+1
+3
+4
+5
+[0;32mStack [0m[0;32mA[0m[0;32m has been successfully [0m[0;32mprinted
+[0mPrinting stack : B
+Stack B size is : 1
+2
+[0;32mStack [0m[0;32mB[0m[0;32m has been successfully [0m[0;32mprinted
+[0mIn function : addtop
+Content : 1
+Printing stack : A
+Stack A size is : 3
+3
+4
+5
+[0;32mStack [0m[0;32mA[0m[0;32m has been successfully [0m[0;32mprinted
+[0mPrinting stack : B
+Stack B size is : 2
+1
+2
+[0;32mStack [0m[0;32mB[0m[0;32m has been successfully [0m[0;32mprinted
+[0mIn function : addtop
+Content : 3
+Printing stack : A
+Stack A size is : 2
+4
+5
+[0;32mStack [0m[0;32mA[0m[0;32m has been successfully [0m[0;32mprinted
+[0mPrinting stack : B
+Stack B size is : 3
+3
+1
+2
+[0;32mStack [0m[0;32mB[0m[0;32m has been successfully [0m[0;32mprinted
+[0mIn function : addtop
+Content : 4
+Printing stack : A
+Stack A size is : 1
+5
+[0;32mStack [0m[0;32mA[0m[0;32m has been successfully [0m[0;32mprinted
+[0mPrinting stack : B
+Stack B size is : 4
+4
+3
+1
+2
+[0;32mStack [0m[0;32mB[0m[0;32m has been successfully [0m[0;32mprinted
+[0mIn function : addtop
+Content : 4
+Printing stack : A
+Stack A size is : 2
+4
+5
+[0;32mStack [0m[0;32mA[0m[0;32m has been successfully [0m[0;32mprinted
+[0mPrinting stack : B
+Stack B size is : 3
+3
+1
+2
+[0;32mStack [0m[0;32mB[0m[0;32m has been successfully [0m[0;32mprinted
+[0mIn function : addtop
+Content : 3
+Printing stack : A
+Stack A size is : 3
+3
+4
+5
+[0;32mStack [0m[0;32mA[0m[0;32m has been successfully [0m[0;32mprinted
+[0mPrinting stack : B
+Stack B size is : 2
+1
+2
+[0;32mStack [0m[0;32mB[0m[0;32m has been successfully [0m[0;32mprinted
+[0mA size is : 3
+Rotate on stack : A
+In function : addbottom
+Content : 3
+Printing stack : A
+Stack A size is : 3
+4
+5
+3
+[0;32mStack [0m[0;32mA[0m[0;32m has been successfully [0m[0;32mprinted
+[0mPrinting stack : B
+Stack B size is : 2
+1
+2
+[0;32mStack [0m[0;32mB[0m[0;32m has been successfully [0m[0;32mprinted
+[0mReverse rotate on stack : A
+In function : delbottom
+In function : addtop
+Content : 3
+Printing stack : A
+Stack A size is : 3
+3
+4
+5
+[0;32mStack [0m[0;32mA[0m[0;32m has been successfully [0m[0;32mprinted
+[0mRotate on stack : B
+In function : addbottom
+Content : 1
+Printing stack : A
+Stack A size is : 3
+3
+4
+5
+[0;32mStack [0m[0;32mA[0m[0;32m has been successfully [0m[0;32mprinted
+[0mPrinting stack : B
+Stack B size is : 2
+2
+1
+[0;32mStack [0m[0;32mB[0m[0;32m has been successfully [0m[0;32mprinted
+[0mReverse rotate on stack : B
+In function : addbottom
+Content : 2
+Printing stack : B
+Stack B size is : 2
+1
+2
+[0;32mStack [0m[0;32mB[0m[0;32m has been successfully [0m[0;32mprinted
+[0mPrinting stack : A
+Stack A size is : 3
+3
+4
+5
+[0;32mStack [0m[0;32mA[0m[0;32m has been successfully [0m[0;32mprinted
+[0m[0;32mStack [0m[0;32mA[0m[0;32m has been successfully [0m[0;32mdeleted
+[0mPrinting stack : B
+Stack B size is : 2
+1
+2
+[0;32mStack [0m[0;32mB[0m[0;32m has been successfully [0m[0;32mprinted
+[0m[0;32mStack [0m[0;32mB[0m[0;32m has been successfully [0m[0;32mdeleted
+[0m

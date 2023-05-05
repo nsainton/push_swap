@@ -1,0 +1,60 @@
+This is stack : A
+The stack size is : 3
+1
+2
+3
+Stack : A has been printed
+This is stack : A
+The stack size is : 2
+2
+3
+Stack : A has been printed
+This is stack : B
+The stack size is : 1
+1
+Stack : B has been printed
+This is stack : A
+The stack size is : 1
+3
+Stack : A has been printed
+This is stack : B
+The stack size is : 2
+2
+1
+Stack : B has been printed
+This is stack : A
+The stack is empty
+This is stack : B
+The stack size is : 3
+3
+2
+1
+Stack : B has been printed
+This is stack : A
+The stack size is : 1
+3
+Stack : A has been printed
+This is stack : B
+The stack size is : 2
+2
+1
+Stack : B has been printed
+This is stack : A
+The stack size is : 2
+2
+3
+Stack : A has been printed
+This is stack : B
+The stack size is : 1
+1
+Stack : B has been printed
+This is stack : A
+The stack size is : 3
+1
+2
+3
+Stack : A has been printed
+This is stack : B
+The stack is empty
+The stack : A has been cleared
+The stack : B has been cleared

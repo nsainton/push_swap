@@ -1,0 +1,39 @@
+[0;32mStack [0m[0;32mA[0m[0;32m has been successfully [0m[0;32mcreated
+[0mIn function : addbottom
+Content : 1
+In function : addbottom
+Content : 2
+In function : addbottom
+Content : 3
+Initial size : 3
+Deltop
+Printing stack : A
+Stack A size is : 3
+1
+2
+3
+[0;32mStack [0m[0;32mA[0m[0;32m has been successfully [0m[0;32mprinted
+[0mDeleted bottom : 0
+In function : delbottom
+Content : 3
+Printing stack : A
+Stack A size is : 2
+1
+2
+[0;32mStack [0m[0;32mA[0m[0;32m has been successfully [0m[0;32mprinted
+[0mDeleted bottom : 1
+In function : delbottom
+Content : 2
+Printing stack : A
+Stack A size is : 1
+1
+[0;32mStack [0m[0;32mA[0m[0;32m has been successfully [0m[0;32mprinted
+[0mDeleted bottom : 2
+In function : delbottom
+Last one
+Content : 1
+Printing stack : A
+Stack A size is : 0
+1
+[0;32mStack [0m[0;32mA[0m[0;32m has been successfully [0m[0;32mprinted
+[0m
